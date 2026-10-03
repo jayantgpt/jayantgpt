@@ -15,7 +15,7 @@
 
 I'm **Jayant Gupta (`jayantgpt`)**, an Electronics & Communication Engineering undergraduate student.
 
-I came into electronics through **robotics** — building competition robots, wiring them, debugging them, and driving them on the field. Along the way I found what really pulls me in: **VLSI**. It still astonishes me that we've learned to put billions of transistors on a chip measured in nanometres.
+I came into electronics through **robotics** — building competition robots, wiring them, debugging them, and driving them on the field. Along the way I found what really pulls me in: **VLSI**. I'm fascinated by how an idea becomes logic, then layout, then a working piece of silicon.
 
 I'm happiest on the **physical side** of engineering:
 
