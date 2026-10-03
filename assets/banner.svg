@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07080c"/>
+      <stop offset="0.6" stop-color="#0e1118"/>
+      <stop offset="1" stop-color="#1a0607"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+    <pattern id="die" width="18" height="18" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="16" height="16" fill="#e10600" fill-opacity="0.05" stroke="#e10600" stroke-opacity="0.18"/>
+    </pattern>
+    <clipPath id="wafer"><circle cx="985" cy="140" r="150"/></clipPath>
+    <pattern id="kerb" width="40" height="10" patternUnits="userSpaceOnUse">
+      <rect width="20" height="10" fill="#e10600"/>
+      <rect x="20" width="20" height="10" fill="#f2f2f2"/>
+    </pattern>
+    <linearGradient id="speed" x1="0" x2="1">
+      <stop offset="0" stop-color="#e10600" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e10600" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+
+
+  <!-- name & tagline -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <rect x="60" y="77" width="44" height="6" fill="#e10600"/>
+    <text x="58" y="150" font-size="66" font-weight="800" fill="#f5f5f5" letter-spacing="3">JAYANT GUPTA</text>
+    <text x="60" y="193" font-size="23" fill="#e10600">ECE Undergraduate · VLSI · Embedded Systems · Robotics</text>
+  </g>
+
+  <!-- track -->
+  <rect x="0" y="318" width="1200" height="10" fill="url(#kerb)" opacity="0.9"/>
+  <rect x="0" y="328" width="1200" height="32" fill="#0a0b0f"/>
+  <path d="M0 344 H1200" stroke="#f2f2f2" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="30 30">
+    <animate attributeName="stroke-dashoffset" from="0" to="60" dur="0.4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- original open-wheel race car, no. 29 -->
+  <g transform="translate(560 262)">
+    <animateTransform attributeName="transform" type="translate" values="-320 262; 1260 262" keyTimes="0;1" dur="3.6s" repeatCount="indefinite"/>
+    <g transform="scale(0.9)">
+      <!-- speed lines -->
+      <rect x="-150" y="14" width="140" height="3" fill="url(#speed)"/>
+      <rect x="-110" y="28" width="110" height="3" fill="url(#speed)"/>
+      <rect x="-170" y="42" width="160" height="3" fill="url(#speed)"/>
+      <!-- rear wing -->
+      <rect x="2" y="2" width="8" height="38" fill="#1c1c1c"/>
+      <rect x="-2" y="0" width="38" height="7" rx="1" fill="#c00000"/>
+      <!-- body -->
+      <path d="M10 30 L60 22 L95 15 L106 4 L121 6 L127 15 L138 19 L200 28 L246 34 L252 41 L10 43 Z" fill="#d40000"/>
+      <path d="M60 33 L190 33" stroke="#7a0000" stroke-width="3"/>
+      <text x="76" y="31" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="800" fill="#ffffff">29</text>
+      <!-- helmet + halo -->
+      <circle cx="140" cy="17" r="6" fill="#f2c200"/>
+      <path d="M128 21 Q141 7 160 22" fill="none" stroke="#111" stroke-width="3"/>
+      <!-- floor + front wing -->
+      <rect x="38" y="41" width="175" height="4" fill="#111"/>
+      <rect x="222" y="40" width="36" height="5" rx="1" fill="#c00000"/>
+      <rect x="254" y="32" width="4" height="13" fill="#1c1c1c"/>
+      <!-- wheels -->
+      <g transform="translate(42 42)">
+        <circle r="18" fill="#111"/><circle r="9" fill="#555"/>
+        <path d="M-8 0H8M0-8V8" stroke="#1d1d1d" stroke-width="2.5">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.25s" repeatCount="indefinite"/>
+        </path>
+      </g>
+      <g transform="translate(206 43)">
+        <circle r="16" fill="#111"/><circle r="8" fill="#555"/>
+        <path d="M-7 0H7M0-7V7" stroke="#1d1d1d" stroke-width="2.5">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.25s" repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+  </g>
+</svg>
